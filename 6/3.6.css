@@ -1,0 +1,13 @@
+*
+{
+	background-color: blue;
+	padding: 0;
+	margin: 0;
+	white-space: pre-line;
+}
+.but
+{
+	height: 100px;
+	width: 100px;
+	padding-top: 100px;
+}
