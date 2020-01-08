@@ -1,5 +1,4 @@
 // 4
-let x = 55;
 let hh = 0;
 let mm = 0;
 let min = 0;
@@ -9,25 +8,22 @@ function inpd(x)
 {
 	ss = osdel(x);
 	min = del(x,ss);
+	x=min;
+
 	if(min >= 60)
 	{
-		mm = osdel(min);
-		hh = del(min,mm)
-		alert(hh + ' : ' + mm + ' : ' +ss);
+		x = osdel(min);
+		hh = del(min,x)
 	}
-	else
-	{
-		alert(hh + ' : ' + min + ' : ' +ss);
-	}
-	x=hh=mm=min=ss=0;
+	alert(hh + ' : ' + x + ' : ' +ss);
+	x=hh=min=ss=0;
 }
 
 function osdel(z)
 {
-	z = z%60;
-	return z;
+	return z%60;
 }
-function del(x , c)
+function del(x, c)
 {
 	let b = (x-c)/60;
 	return b;

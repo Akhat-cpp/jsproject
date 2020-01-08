@@ -2,18 +2,26 @@
 
 function inpd(x)
 {
-	if(x%100 >= 10 && x%100 <= 20 || x%10 == 0 || (x%10 >= 5 && x%10 <= 9 && x%100 != 15 && x%100 != 16 && x%100 != 17 && x%100 != 18 && x%100 != 19))
+	alert(x + ' ' + letGodGoda(x));
+	x=0;
+}
+function otDo(z, begin, end)
+{
+	return (z>=begin && z<=end);
+}
+function letGodGoda(x)
+{
+	if(otDo(x%100, 10, 20) || x%10 == 0 || (otDo(x%10, 5, 9 ) && !otDo(x%100, 15, 19)))
 	{
-		alert(x + ' let');
+		return('let');
 	}
 	if(x%10 == 1 && x%100 != 11)
 	{
-		alert(x + ' god');
+		return('god');
 	}
-	if((x%10 >= 2 && x%10 <=4) && (x%100 != 12 && x%100 != 13 && x%100 != 14))
+	if(otDo(x%10, 2, 4) && !otDo(x%100, 12 , 14))
 	{
-		alert(x + ' goda');
+		return('goda');
 	}
-	x=0;
 }
 

@@ -1,0 +1,23 @@
+*
+{
+	background-color: #282923;
+	padding: 0;
+	margin: 0;
+	white-space: pre-line;
+	color: red;
+}
+.but
+{
+	height: 100px;
+	width: 100px;
+	padding-top: 100px;
+}
+.unvisible 
+{
+	display: none;
+}
+.img2
+{
+	width: 3%;
+	height: 3%;
+}
