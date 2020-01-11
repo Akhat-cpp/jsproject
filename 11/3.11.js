@@ -1,15 +1,20 @@
 // 11
-
 function inpd(str)
 {
 	let arraySHshp = str.split(',');
+	// alert(arraySHshp)
 	let strSHshp = sArrayVString(arraySHshp);
-	let arrayCleanNa05= strSHshp.split('https://');
+	// alert(strSHshp)
+	let arrayCleanNa05 =  strSHshp.split('https://');
+	// alert(arrayCleanNa05)
 	let strCleanNa05 = sArrayVString(arrayCleanNa05);
-	let strClean= strCleanNa05.split('http://');
-	alert(strClean[2]);
+	// alert(strCleanNa05)
+	let arrayClean = strCleanNa05.split('http://');
+	// alert(arrayClean)
+	arrayClean.sort();
+	alert(arrayClean[1]);
 }
-sArrayVString(s)
+function sArrayVString(s)
 {
 	let counter = 0;
 	let strp = ' ';
